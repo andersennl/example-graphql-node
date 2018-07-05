@@ -20,7 +20,7 @@ and
 
 run `npm run dev:server`
 
-Open [http://localhost:4000/graphql](http://localhost:4000/graphql)
+The database content can be viewed at [http://localhost:3000](http://localhost:3000).
 
 ## Schema used for this project
 ```
@@ -36,7 +36,7 @@ const CustomerType = new GraphQLObjectType({
 ```
 
 ## Example queries
-The following queries are examples for what you an do in the GraphiQL web interface (Open [http://localhost:4000/graphql](http://localhost:4000/graphql)).
+The following queries are examples for what you an use in the GraphiQL web interface (Open [http://localhost:4000/graphql](http://localhost:4000/graphql)).
 
 ### Query all customers, get fields id, name and age
 
