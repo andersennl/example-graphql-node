@@ -1,6 +1,9 @@
 ## Graphql server running on node and json server
 
 ### Setup
+
+Run `yarn` to install the project's dependencies.
+
 Create local JSON database:
 
 `touch data.json`
