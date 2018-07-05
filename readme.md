@@ -82,3 +82,10 @@ mutation {
   }
 }
 ```
+
+### Update customer
+```
+mutation {
+  editCustomer(id:"NfwMj53", email:"customer@gmail.com")
+}
+```
