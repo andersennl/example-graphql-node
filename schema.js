@@ -70,6 +70,19 @@ const mutation = new GraphQLObjectType({
         return axios.delete("http://localhost:3000/customers/" + args.id)
         .then(result => result.data);
       }
+    },
+    editCustomer: {
+      type: CustomerType,
+      args: {
+        id: {type: new GraphQLNonNull(GraphQLString)},
+        name: {type: GraphQLString},
+        email: {type: GraphQLString},
+        age: {type: GraphQLInt},
+      },
+      resolve(parentValue, args) {
+        return axios.patch("http://localhost:3000/customers/" + args.id, args)
+        .then(result => result.data);
+      }
     }
   }
 });
