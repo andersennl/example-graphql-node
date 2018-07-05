@@ -1,5 +1,8 @@
 ## Graphql server running on node and json server
 
+### Project description
+This project uses `nodemon, express and express-graphql` to run a local GraphQL server. It uses `json-server` to provide a local backend, which uses the local file `data.json` as a local database.
+
 ### Setup
 
 Run `yarn` to install the project's dependencies.
