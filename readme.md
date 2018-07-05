@@ -35,7 +35,7 @@ const CustomerType = new GraphQLObjectType({
 ### Example queries
 In the GraphiQL web interface (Open [http://localhost:4000/graphql](http://localhost:4000/graphql)), you can use the following example queries.
 
-#### Get all customers, fields id, name and age
+#### Query all customers, get fields id, name and age
 
 ```
 {
@@ -45,6 +45,18 @@ In the GraphiQL web interface (Open [http://localhost:4000/graphql](http://local
     age
   }
 }
+```
+
+#### Query specific customer by id, get fields name, email and age
+```
+{
+  customer(id: "NfwMj53") {
+    name
+    email
+    age
+  }
+}
+
 ```
 
 #### Add customer
