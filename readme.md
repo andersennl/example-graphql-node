@@ -1,9 +1,9 @@
-## Graphql server running on node and json server
+# Graphql server running on node and json server
 
-### Project description
+## Project description
 This project uses `nodemon, express and express-graphql` to run a local GraphQL server. It uses `json-server` to provide a local backend, which uses the local file `data.json` as a local database.
 
-### Setup
+## Setup
 
 Run `yarn` to install the project's dependencies.
 
@@ -13,7 +13,7 @@ Create local JSON database:
 
 It will be used by json-server.
 
-### Start
+## Start
 run `npm run json:server`
 
 and
@@ -22,7 +22,7 @@ run `npm run dev:server`
 
 Open [http://localhost:4000/graphql](http://localhost:4000/graphql)
 
-### Schema used for this project
+## Schema used for this project
 ```
 const CustomerType = new GraphQLObjectType({
   name: "Customer",
@@ -35,10 +35,10 @@ const CustomerType = new GraphQLObjectType({
 });
 ```
 
-### Example queries
+## Example queries
 In the GraphiQL web interface (Open [http://localhost:4000/graphql](http://localhost:4000/graphql)), you can use the following example queries.
 
-#### Query all customers, get fields id, name and age
+### Query all customers, get fields id, name and age
 
 ```
 {
@@ -50,7 +50,7 @@ In the GraphiQL web interface (Open [http://localhost:4000/graphql](http://local
 }
 ```
 
-#### Query specific customer by id, get fields name, email and age
+### Query specific customer by id, get fields name, email and age
 ```
 {
   customer(id: "NfwMj53") {
@@ -62,7 +62,7 @@ In the GraphiQL web interface (Open [http://localhost:4000/graphql](http://local
 
 ```
 
-#### Add customer
+### Add customer
 ```
 mutation {
   addCustomer(name:"new customer", email:"email@gmail.com", age: 32) {
@@ -73,7 +73,7 @@ mutation {
 }
 ```
 
-#### Delete customer
+### Delete customer
 ```
 mutation {
   deleteCustomer(id:"Ww911Tg"){
